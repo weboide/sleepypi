@@ -1,0 +1,13 @@
+{
+  "name": "soporipi",
+  "version": "0.1.0",
+  "main": "main.js",
+  "devDependencies": {
+    "electron-packager": "^7.0.1",
+    "electron-prebuilt": "^0.37.6"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/electron .",
+    "package": "./node_modules/.bin/electron-packager ./ Soporipi --all"
+  }
+}
