@@ -3,11 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
+    <link rel="stylesheet" href="node_modules/flipclock/compiled/flipclock.css">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using node <script>document.write(process.versions.node)</script>,
-    Chrome <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+    <h1 class="today"></h1>
+    <div class="your-clock-wrapper"><div class="your-clock"></div></div>
   </body>
+  <script>
+    window.$ = window.jQuery = require('jquery');
+  </script>
+  <script src="./node_modules/flipclock/compiled/flipclock.js"></script>
+  <script>require('./js/clock.js');</script>
 </html>
