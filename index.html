@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <title>SleepyPi</title>
     <link rel="stylesheet" href="node_modules/flipclock/compiled/flipclock.css">
     <link rel="stylesheet" href="node_modules/jquery.flipster/dist/jquery.flipster.min.css">
     <link rel="stylesheet" href="css/main.css">
@@ -14,11 +14,19 @@
     <div id="coverflow">
         <ul class="flip-items">
             <li data-flip-title="Red">
-                <div class="app">Application 1</div>
+                <div class="app">
+                  <div class="app-content">
+                    <a href="app.html?url=https://youtube.com/"><img src="https://www.youtube.com/yt/brand/media/image/YouTube-logo-full_color.png"/></a>
+                  </div>
+                </div>
             </li>
             <li data-flip-title="Razzmatazz" data-flip-category="Purples">
-                <div class="app">Application 2</div>
-             </li>
+                <div class="app">
+                  <div class="app-content">
+                    <a href="app.html?url=https://weather.com/"><img src="https://www.mikeafford.com/store/store-images/ww01_example_light_rain_showers.png"/></a>
+                  </div>
+                </div>
+            </li>
             <li data-flip-title="Deep Lilac" data-flip-category="Purples">
                 <div class="app">Application 3</div>
             </li>
@@ -41,9 +49,7 @@
     </div>
     
   </body>
-  <script>
-    window.$ = window.jQuery = require('jquery');
-  </script>
+  <script>require('./js/global.js');</script>
   <script src="./node_modules/flipclock/compiled/flipclock.js"></script>
   <script>require('./js/clock.js');</script>
 </html>

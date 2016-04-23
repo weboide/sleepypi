@@ -7,6 +7,10 @@ const BrowserWindow = electron.BrowserWindow;  // Module to create native browse
 // be closed automatically when the JavaScript object is garbage collected.
 var mainWindow = null;
 
+// Add flash support using pepper
+app.commandLine.appendSwitch('ppapi-flash-path', './libpepflashplayer.so');
+app.commandLine.appendSwitch('ppapi-flash-version', '21.0.0.216');
+
 // Quit when all windows are closed.
 app.on('window-all-closed', function() {
   // On OS X it is common for applications and their menu bar
@@ -20,7 +24,11 @@ app.on('window-all-closed', function() {
 // initialization and is ready to create browser windows.
 app.on('ready', function() {
   // Create the browser window.
-  mainWindow = new BrowserWindow({fullscreen: true});
+  mainWindow = new BrowserWindow({fullscreen: true,
+    'webPreferences': {
+      'plugins': true
+    }
+  });
 
   // and load the index.html of the app.
   mainWindow.loadURL('file://' + __dirname + '/index.html');
