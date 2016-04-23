@@ -1,5 +1,5 @@
 {
-  "name": "soporipi",
+  "name": "sleepypi",
   "version": "0.1.0",
   "main": "main.js",
   "devDependencies": {
@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "./node_modules/.bin/electron .",
-    "package": "./node_modules/.bin/electron-packager ./ Soporipi --all"
+    "package": "./node_modules/.bin/electron-packager ./ SleepyPi --all"
   },
   "dependencies": {
     "flipclock": "^0.7.8",
