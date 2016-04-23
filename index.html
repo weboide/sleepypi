@@ -4,11 +4,42 @@
     <meta charset="UTF-8">
     <title>Hello World!</title>
     <link rel="stylesheet" href="node_modules/flipclock/compiled/flipclock.css">
+    <link rel="stylesheet" href="node_modules/jquery.flipster/dist/jquery.flipster.min.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <h1 class="today"></h1>
     <div class="your-clock-wrapper"><div class="your-clock"></div></div>
+    
+    <div id="coverflow">
+        <ul class="flip-items">
+            <li data-flip-title="Red">
+                <div class="app">Application 1</div>
+            </li>
+            <li data-flip-title="Razzmatazz" data-flip-category="Purples">
+                <div class="app">Application 2</div>
+             </li>
+            <li data-flip-title="Deep Lilac" data-flip-category="Purples">
+                <div class="app">Application 3</div>
+            </li>
+            <li data-flip-title="Daisy Bush" data-flip-category="Purples">
+                <div class="app">Application 4</div>
+            </li>
+            <li data-flip-title="Cerulean Blue" data-flip-category="Blues">
+                <div class="app">Application 5</div>
+            </li>
+            <li data-flip-title="Dodger Blue" data-flip-category="Blues">
+                <div class="app">Application 6</div>
+            </li>
+            <li data-flip-title="Cyan" data-flip-category="Blues">
+                <div class="app">Application 7</div>
+            </li>
+            <li data-flip-title="Robin's Egg" data-flip-category="Blues">
+                <div class="app">Application 8</div>
+            </li>
+        </ul>
+    </div>
+    
   </body>
   <script>
     window.$ = window.jQuery = require('jquery');

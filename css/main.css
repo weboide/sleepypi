@@ -16,11 +16,21 @@ body {
 .your-clock {
   width:auto;
   display:inline-block;
-  height:20em;
+  margin-bottom:5em;
 }
 
 .your-clock-wrapper {
   text-align:center;
   margin:0 auto;
   width:80%;
+}
+
+#coverflow .app {
+  color:#ccc;
+  display:block;
+  height:15em;
+  width:20em;
+  background:#333;
+  border-radius: 1em;
+  padding:1em;
 }
